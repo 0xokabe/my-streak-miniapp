@@ -6,12 +6,12 @@
     "build": "next build",
     "start": "next start -p 3000"
   },
- "dependencies": {
-  "@farcaster/miniapp-sdk": "^0.1.0",
-  "@farcaster/quick-auth": "^0.0.8",
-  "@upstash/redis": "^1.31.0",
-  "next": "^14.2.0",
-  "react": "^18.2.0",
-  "react-dom": "^18.2.0"
- }
+  "dependencies": {
+    "@farcaster/miniapp-sdk": "^0.1.0",
+    "@farcaster/quick-auth": "^0.0.8",
+    "@upstash/redis": "^1.31.0",
+    "next": "^14.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }
