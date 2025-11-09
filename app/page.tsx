@@ -3,13 +3,7 @@ import React, { useEffect, useState, useCallback } from 'react';
 import { sdk } from '@farcaster/miniapp-sdk';
 
 type Me = { fid: number };
-
-type Stats = {
-  todayChecked: boolean;
-  streak: number;
-  best: number;
-  today: string;
-};
+type Stats = { todayChecked: boolean; streak: number; best: number; today: string };
 
 export default function Page(): JSX.Element {
   const [me, setMe] = useState<Me | null>(null);
@@ -38,9 +32,9 @@ export default function Page(): JSX.Element {
     if (res.ok) {
       const data = await res.json();
       setStats(data);
-      sdk.actions.haptics?.notification?.('success');
+      // (하프틱 제거)
     } else {
-      sdk.actions.haptics?.notification?.('error');
+      // (하프틱 제거)
     }
   }, []);
 
